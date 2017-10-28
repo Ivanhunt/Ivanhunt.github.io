@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数据结构," />
 
 
 
@@ -94,17 +94,22 @@
 
 
 
-<meta name="description" content="不断前进的OIER">
-<meta name="keywords" content="Hunt 张承琪 Ivanhunt">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IvanHunt&#39;s Blog">
-<meta property="og:url" content="https://Ivanhunt.github.io/index.html">
+<meta name="description" content="在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。 使用并查集时，首先会存在一组不相交的动态集合S={S1,S2,S3,...Sk},一般使用一个整数表示集合中的一个元素。 每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包">
+<meta name="keywords" content="数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="并查集">
+<meta property="og:url" content="https://Ivanhunt.github.io/并查集.html">
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
-<meta property="og:description" content="不断前进的OIER">
+<meta property="og:description" content="在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。 使用并查集时，首先会存在一组不相交的动态集合S={S1,S2,S3,...Sk},一般使用一个整数表示集合中的一个元素。 每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10xif2W15fhkF/7B45bnbLGwOgGJglB.ZHfNSo0GX4pB2vzUE3VcQoFHI!/b/dOsAAAAAAAAA&bo=EgK2AQAAAAADB4U!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10xif2W15fhkF/Gc5JFmeHGRQgYbhYUNwSNmoZlNTmbaAz5Agsepxydw8!/b/dPcAAAAAAAAA&bo=fgOsAAAAAAADB*M!&rf=viewer_4">
+<meta property="og:image" content="http://a3.qpic.cn/psb?/V10xif2W15fhkF/idCi0KtZXSLbBjtKqm2*BZaurYySo6YkhbUrYEIwvUU!/b/dIUBAAAAAAAA&bo=*AQYAgAAAAADB8A!&rf=viewer_4">
+<meta property="og:updated_time" content="2017-10-28T13:57:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IvanHunt&#39;s Blog">
-<meta name="twitter:description" content="不断前进的OIER">
+<meta name="twitter:title" content="并查集">
+<meta name="twitter:description" content="在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。 使用并查集时，首先会存在一组不相交的动态集合S={S1,S2,S3,...Sk},一般使用一个整数表示集合中的一个元素。 每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包">
+<meta name="twitter:image" content="http://a2.qpic.cn/psb?/V10xif2W15fhkF/7B45bnbLGwOgGJglB.ZHfNSo0GX4pB2vzUE3VcQoFHI!/b/dOsAAAAAAAAA&bo=EgK2AQAAAAADB4U!&rf=viewer_4">
 
 
 
@@ -134,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://Ivanhunt.github.io/"/>
+  <link rel="canonical" href="https://Ivanhunt.github.io/并查集.html"/>
 
 
 
 
 
-  <title>IvanHunt's Blog</title>
+  <title>并查集 | IvanHunt's Blog</title>
   
 
 
@@ -169,9 +174,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,9 +257,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -286,9 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/并查集.html" itemprop="url">并查集</a></h1>
+          <h1 class="post-title" itemprop="name headline">并查集</h1>
         
 
         <div class="post-meta">
@@ -338,19 +339,30 @@
       
 
       
-        
-          <p>在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。</p>
+        <p>在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。</p>
 <p>使用并查集时，首先会存在一组不相交的动态集合<code>S={S1,S2,S3,...Sk}</code>,一般使用一个整数表示集合中的一个元素。</p>
 <p>每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包含了哪些元素是不关心的，具体选择哪个元素作为代表一般情况下也是不关心的。我们关心的是，<code>对于给定的元素，可以很快的找到这个元素所在的集合（的代表），以及合并两个元素所在的集合，而且这些操作的时间复杂度都是常数级的。</code></p>
 <p>并查集的实现原理很简单，就是<code>使用树来表示集合，树的每个节点就表示集合中的一个元素，树根对应的元素就是该集合的代表。</code></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/并查集.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<p><img src="http://a2.qpic.cn/psb?/V10xif2W15fhkF/7B45bnbLGwOgGJglB.ZHfNSo0GX4pB2vzUE3VcQoFHI!/b/dOsAAAAAAAAA&amp;bo=EgK2AQAAAAADB4U!&amp;rf=viewer_4" alt=""></p>
+<p>图中的两个集合，其中第一个集合为{a,b,c,d}代表元素是a；第二个集合为{e,f,g}，代表元素是e。</p>
+<p><code>树的节点表示集合中的元素，指针表示指向父节点的指针，根节点的指针指向自己，表示其没有父节点。</code>沿着每个父节点不断向上查找，最终就可以找到该树的根节点，即该集合的代表元素。</p>
+<h2 id="创建并查集"><a href="#创建并查集" class="headerlink" title="创建并查集"></a>创建并查集</h2><p><code>makeSet(s)</code>：建立一个新的并查集，其中包含s个单个元素集合。</p>
+<p>makeSet要做的就是构造下图的森林，其中每个元素都是一个单元素集合，即父节点是其自身：</p>
+<p><img src="http://a2.qpic.cn/psb?/V10xif2W15fhkF/Gc5JFmeHGRQgYbhYUNwSNmoZlNTmbaAz5Agsepxydw8!/b/dPcAAAAAAAAA&amp;bo=fgOsAAAAAAADB*M!&amp;rf=viewer_4" alt=""></p>
+<p>相应的代码如下，不难看出时间复杂度是O(n)：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> MaxN = <span class="number">1e3</span>;</div><div class="line"><span class="keyword">int</span> uset[MaxN];</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeSet</span><span class="params">(<span class="keyword">int</span> size)</span></span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++) uset[i]=i;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>##查找集合的代表</p>
+<p>找到元素x所在的集合的代表，该操作也可以用于判断两个元素是否位于同一个集合，只要将它们各自的代表比较即可。</p>
+<p>如果每次都沿着节点向上查找，那时间复杂度就是树的高度，完全不可能达到常数级。这里需要应用一种非常简单而有效的策略—<code>路径压缩</code></p>
+<p><code>路径压缩，就是在每次查找时，令查找路径上的每个节点都直接指向根节点</code></p>
+<p><img src="http://a3.qpic.cn/psb?/V10xif2W15fhkF/idCi0KtZXSLbBjtKqm2*BZaurYySo6YkhbUrYEIwvUU!/b/dIUBAAAAAAAA&amp;bo=*AQYAgAAAAADB8A!&amp;rf=viewer_4" alt=""></p>
+<p>通过<code>find</code>操作来实现，分别是递归版和非递归版，<del>个人比较喜欢递归版</del>。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">    <span class="keyword">if</span>(x != uset[x]) uset[x] = find(uset[x]);</div><div class="line">  	<span class="keyword">return</span> uset[x];</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> p = x, t;</div><div class="line">  	<span class="keyword">while</span>(uset[p] != p) p=uset[p];</div><div class="line">  	<span class="keyword">while</span>(x != p)&#123;</div><div class="line">        t = uset[x]; uset[x] = p; x = t;</div><div class="line">    &#125;</div><div class="line">  	<span class="keyword">return</span> x;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="合并集合"><a href="#合并集合" class="headerlink" title="合并集合"></a>合并集合</h2><p>把元素x和元素y所在的集合合并，<code>要求x和y所在的集合不相交，如果相交则不合并。</code>将<code>一个集合的树根</code>指向<code>另一个集合的树根</code>即可。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">unionSet</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</div><div class="line">    <span class="keyword">if</span>((x = find(x)) == (y = find(y))) <span class="keyword">return</span>;</div><div class="line">  	<span class="keyword">if</span>(rank[x] &gt; rank[y]) uset[y] = x;</div><div class="line">  	<span class="keyword">else</span>&#123;</div><div class="line">        uset[x] = y;</div><div class="line">      <span class="keyword">if</span>(rank[x] == rank[y]) rank[y]++;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>例题是NOIP 2010 关押罪犯 和 NOIP 2013 货车运输。</p>
+
       
     </div>
     
@@ -365,268 +377,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Ivanhunt.github.io/bellman-ford.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张承琪">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IvanHunt's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/bellman-ford.html" itemprop="url">Bellman-Ford算法及其优化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-02T09:59:09+08:00">
-                2017-09-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>Bellman-Ford可以解决负权值边的问题</p>
-<p>核心代码如下，<strong>这段代码算法时间复杂度是O(NM)</strong>，可以优化：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">1</span>;k &lt;= n<span class="number">-1</span>;k++)</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt;= m;i++)</div><div class="line">    <span class="keyword">if</span>(dis[v[i]] &gt; dis[u[i]] + w[i])&#123;</div><div class="line">        dis[v[i]] = dis[u[i]] + w[i];</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>因为<code>最短路径</code>上最多有 n-1 条边，因此 Bellman-Ford 算法最多有 <code>n-1</code> 个阶段。在每一个阶段，我们对每一条边都要执行松弛操作。其实每实施一次松弛操作，就会有一些顶点已经求得其最短路，即这些顶点的最短路的“估计值”变为“确定值”。伺候这些顶点的最短路的值就会一直保持不变，不再受后续松弛操作的影响。<del>但是可不可以优化一下</del> 在前k个阶段结束后，就找出了从源点出发“最多经过k条边”到达各个顶点的最短路。直到进行完 n-1 个阶段后，便得出了最多经过 n-1 条边的最短路。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/bellman-ford.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/bellman-ford.html" rel="next" title="Bellman-Ford算法及其优化">
+                <i class="fa fa-chevron-left"></i> Bellman-Ford算法及其优化
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Ivanhunt.github.io/20170830.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张承琪">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IvanHunt's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/20170830.html" itemprop="url">20170830</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-30T12:29:52+08:00">
-                2017-08-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>今天是报到前的一天，分班结果已经出来了。</p>
-<p>好几个人去了文科班，好几个人去了创新班。</p>
-<p>附上一段Hello World：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">"Hello World"</span>&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/20170830.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -636,10 +416,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -647,6 +428,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -667,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -735,6 +529,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建并查集"><span class="nav-number">1.</span> <span class="nav-text">创建并查集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合并集合"><span class="nav-number">2.</span> <span class="nav-text">合并集合</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -863,10 +673,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
 <script type="text/javascript" src="/js/src/post-details.js?v="></script>
 
-  
+
 
   
 
