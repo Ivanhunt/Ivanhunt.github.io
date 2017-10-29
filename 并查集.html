@@ -102,14 +102,14 @@
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
 <meta property="og:description" content="在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。 使用并查集时，首先会存在一组不相交的动态集合S={S1,S2,S3,...Sk},一般使用一个整数表示集合中的一个元素。 每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://a2.qpic.cn/psb?/V10xif2W15fhkF/7B45bnbLGwOgGJglB.ZHfNSo0GX4pB2vzUE3VcQoFHI!/b/dOsAAAAAAAAA&bo=EgK2AQAAAAADB4U!&rf=viewer_4">
-<meta property="og:image" content="http://a2.qpic.cn/psb?/V10xif2W15fhkF/Gc5JFmeHGRQgYbhYUNwSNmoZlNTmbaAz5Agsepxydw8!/b/dPcAAAAAAAAA&bo=fgOsAAAAAAADB*M!&rf=viewer_4">
-<meta property="og:image" content="http://a3.qpic.cn/psb?/V10xif2W15fhkF/idCi0KtZXSLbBjtKqm2*BZaurYySo6YkhbUrYEIwvUU!/b/dIUBAAAAAAAA&bo=*AQYAgAAAAADB8A!&rf=viewer_4">
-<meta property="og:updated_time" content="2017-10-28T15:45:14.000Z">
+<meta property="og:image" content="http://oyji25904.bkt.clouddn.com/psb-2.png?imageMogr2/thumbnail/!50p">
+<meta property="og:image" content="http://oyji25904.bkt.clouddn.com/psb-1.png">
+<meta property="og:image" content="http://oyji25904.bkt.clouddn.com/psb.png">
+<meta property="og:updated_time" content="2017-10-29T15:13:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="并查集">
 <meta name="twitter:description" content="在一些有N个元素的集合应用问题中，通常在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，期间要反复查找一个元素在哪个集合中。并查集就是完成这种操作的数据结构。 使用并查集时，首先会存在一组不相交的动态集合S={S1,S2,S3,...Sk},一般使用一个整数表示集合中的一个元素。 每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包">
-<meta name="twitter:image" content="http://a2.qpic.cn/psb?/V10xif2W15fhkF/7B45bnbLGwOgGJglB.ZHfNSo0GX4pB2vzUE3VcQoFHI!/b/dOsAAAAAAAAA&bo=EgK2AQAAAAADB4U!&rf=viewer_4">
+<meta name="twitter:image" content="http://oyji25904.bkt.clouddn.com/psb-2.png?imageMogr2/thumbnail/!50p">
 
 
 
@@ -344,18 +344,18 @@
 <p>每个集合可能包含一个或多个元素，并选出集合中的某个元素作为代表。每个集合中具体包含了哪些元素是不关心的，具体选择哪个元素作为代表一般情况下也是不关心的。我们关心的是，<code>对于给定的元素，可以很快的找到这个元素所在的集合（的代表），以及合并两个元素所在的集合，而且这些操作的时间复杂度都是常数级的。</code></p>
 <p>并查集的实现原理很简单，就是<code>使用树来表示集合，树的每个节点就表示集合中的一个元素，树根对应的元素就是该集合的代表。</code></p>
 <a id="more"></a>
-<p><img src="http://a2.qpic.cn/psb?/V10xif2W15fhkF/7B45bnbLGwOgGJglB.ZHfNSo0GX4pB2vzUE3VcQoFHI!/b/dOsAAAAAAAAA&amp;bo=EgK2AQAAAAADB4U!&amp;rf=viewer_4" alt=""></p>
+<p><img src="http://oyji25904.bkt.clouddn.com/psb-2.png?imageMogr2/thumbnail/!50p" alt=""></p>
 <p>图中的两个集合，其中第一个集合为{a,b,c,d}代表元素是a；第二个集合为{e,f,g}，代表元素是e。</p>
 <p><code>树的节点表示集合中的元素，指针表示指向父节点的指针，根节点的指针指向自己，表示其没有父节点。</code>沿着每个父节点不断向上查找，最终就可以找到该树的根节点，即该集合的代表元素。</p>
 <h2 id="创建并查集"><a href="#创建并查集" class="headerlink" title="创建并查集"></a>创建并查集</h2><p><code>makeSet(s)</code>：建立一个新的并查集，其中包含s个单个元素集合。</p>
 <p>makeSet要做的就是构造下图的森林，其中每个元素都是一个单元素集合，即父节点是其自身：</p>
-<p><img src="http://a2.qpic.cn/psb?/V10xif2W15fhkF/Gc5JFmeHGRQgYbhYUNwSNmoZlNTmbaAz5Agsepxydw8!/b/dPcAAAAAAAAA&amp;bo=fgOsAAAAAAADB*M!&amp;rf=viewer_4" alt=""></p>
+<p><img src="http://oyji25904.bkt.clouddn.com/psb-1.png" alt=""></p>
 <p>相应的代码如下，不难看出时间复杂度是O(n)：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> MaxN = <span class="number">1e3</span>;</div><div class="line"><span class="keyword">int</span> uset[MaxN];</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeSet</span><span class="params">(<span class="keyword">int</span> size)</span></span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++) uset[i]=i;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="查找集合的代表"><a href="#查找集合的代表" class="headerlink" title="查找集合的代表"></a>查找集合的代表</h2><p>找到元素x所在的集合的代表，该操作也可以用于判断两个元素是否位于同一个集合，只要将它们各自的代表比较即可。</p>
 <p>如果每次都沿着节点向上查找，那时间复杂度就是树的高度，完全不可能达到常数级。这里需要应用一种非常简单而有效的策略—<code>路径压缩</code></p>
 <p><code>路径压缩，就是在每次查找时，令查找路径上的每个节点都直接指向根节点</code></p>
-<p><img src="http://a3.qpic.cn/psb?/V10xif2W15fhkF/idCi0KtZXSLbBjtKqm2*BZaurYySo6YkhbUrYEIwvUU!/b/dIUBAAAAAAAA&amp;bo=*AQYAgAAAAADB8A!&amp;rf=viewer_4" alt=""></p>
+<p><img src="http://oyji25904.bkt.clouddn.com/psb.png" alt=""></p>
 <p>通过<code>find</code>操作来实现，分别是递归版和非递归版，<del>个人比较喜欢递归版</del>。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">    <span class="keyword">if</span>(x != uset[x]) uset[x] = find(uset[x]);</div><div class="line">  	<span class="keyword">return</span> uset[x];</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> p = x, t;</div><div class="line">  	<span class="keyword">while</span>(uset[p] != p) p=uset[p];</div><div class="line">  	<span class="keyword">while</span>(x != p)&#123;</div><div class="line">        t = uset[x]; uset[x] = p; x = t;</div><div class="line">    &#125;</div><div class="line">  	<span class="keyword">return</span> x;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="合并集合"><a href="#合并集合" class="headerlink" title="合并集合"></a>合并集合</h2><p>把元素x和元素y所在的集合合并，<code>要求x和y所在的集合不相交，如果相交则不合并。</code>将<code>一个集合的树根</code>指向<code>另一个集合的树根</code>即可。</p>
