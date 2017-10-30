@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="数论" />
+  <meta name="keywords" content="最小生成树," />
 
 
 
@@ -94,20 +94,20 @@
 
 
 
-<meta name="description" content="排列组合的公式$ C_n^m = \frac{n!}{m!(n-m)!} $二项式定理$(a+b)^n=\sum_{r=0}^nC_n^ra^{n-r}b^r$杨辉三角形 第一行i=1;第二行i=2;以此类推…">
-<meta name="keywords" content="数论">
+<meta name="description" content="luogu_ P3366 【模板】最小生成树 题目描述如题，给出一个无向图，求出最小生成树，如果该图不连通，则输出orz 输入输出格式输入格式： 第一行包含两个整数N、M，表示该图共有N个结点和M条无向边。（N&amp;lt;=5000，M&amp;lt;=200000） 接下来M行每行包含三个整数Xi、Yi、Zi，表示有一条长度为Zi的无向边连接结点Xi、Yi 输出格式： 输出包含一个数，即最小生成树的各边的长">
+<meta name="keywords" content="最小生成树">
 <meta property="og:type" content="article">
-<meta property="og:title" content="组合数问题">
-<meta property="og:url" content="https://Ivanhunt.github.io/组合数问题.html">
+<meta property="og:title" content="Kruskal 最小生成树">
+<meta property="og:url" content="https://Ivanhunt.github.io/最小生成树.html">
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
-<meta property="og:description" content="排列组合的公式$ C_n^m = \frac{n!}{m!(n-m)!} $二项式定理$(a+b)^n=\sum_{r=0}^nC_n^ra^{n-r}b^r$杨辉三角形 第一行i=1;第二行i=2;以此类推…">
+<meta property="og:description" content="luogu_ P3366 【模板】最小生成树 题目描述如题，给出一个无向图，求出最小生成树，如果该图不连通，则输出orz 输入输出格式输入格式： 第一行包含两个整数N、M，表示该图共有N个结点和M条无向边。（N&amp;lt;=5000，M&amp;lt;=200000） 接下来M行每行包含三个整数Xi、Yi、Zi，表示有一条长度为Zi的无向边连接结点Xi、Yi 输出格式： 输出包含一个数，即最小生成树的各边的长">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oyji25904.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-29%20%E4%B8%8A%E5%8D%8812.00.27.png?imageMogr2/thumbnail/!50p">
-<meta property="og:updated_time" content="2017-10-30T12:55:11.000Z">
+<meta property="og:image" content="https://cdn.luogu.org/upload/pic/2259.png">
+<meta property="og:updated_time" content="2017-10-30T13:10:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="组合数问题">
-<meta name="twitter:description" content="排列组合的公式$ C_n^m = \frac{n!}{m!(n-m)!} $二项式定理$(a+b)^n=\sum_{r=0}^nC_n^ra^{n-r}b^r$杨辉三角形 第一行i=1;第二行i=2;以此类推…">
-<meta name="twitter:image" content="http://oyji25904.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-29%20%E4%B8%8A%E5%8D%8812.00.27.png?imageMogr2/thumbnail/!50p">
+<meta name="twitter:title" content="Kruskal 最小生成树">
+<meta name="twitter:description" content="luogu_ P3366 【模板】最小生成树 题目描述如题，给出一个无向图，求出最小生成树，如果该图不连通，则输出orz 输入输出格式输入格式： 第一行包含两个整数N、M，表示该图共有N个结点和M条无向边。（N&amp;lt;=5000，M&amp;lt;=200000） 接下来M行每行包含三个整数Xi、Yi、Zi，表示有一条长度为Zi的无向边连接结点Xi、Yi 输出格式： 输出包含一个数，即最小生成树的各边的长">
+<meta name="twitter:image" content="https://cdn.luogu.org/upload/pic/2259.png">
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="https://Ivanhunt.github.io/组合数问题.html"/>
+  <link rel="canonical" href="https://Ivanhunt.github.io/最小生成树.html"/>
 
 
 
 
 
-  <title>组合数问题 | IvanHunt's Blog</title>
+  <title>Kruskal 最小生成树 | IvanHunt's Blog</title>
   
 
 
@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Ivanhunt.github.io/组合数问题.html">
+    <link itemprop="mainEntityOfPage" href="https://Ivanhunt.github.io/最小生成树.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张承琪">
@@ -287,7 +287,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">组合数问题</h1>
+          <h1 class="post-title" itemprop="name headline">Kruskal 最小生成树</h1>
         
 
         <div class="post-meta">
@@ -299,8 +299,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-28T22:37:33+08:00">
-                2017-10-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-30T21:05:25+08:00">
+                2017-10-30
               </time>
             
 
@@ -337,18 +337,26 @@
       
 
       
-        <h2 id="排列组合的公式"><a href="#排列组合的公式" class="headerlink" title="排列组合的公式"></a>排列组合的公式</h2><h3 id="C-n-m-frac-n-m-n-m"><a href="#C-n-m-frac-n-m-n-m" class="headerlink" title="$ C_n^m = \frac{n!}{m!(n-m)!} $"></a>$ C_n^m = \frac{n!}{m!(n-m)!} $</h3><h2 id="二项式定理"><a href="#二项式定理" class="headerlink" title="二项式定理"></a>二项式定理</h2><h3 id="a-b-n-sum-r-0-nC-n-ra-n-r-b-r"><a href="#a-b-n-sum-r-0-nC-n-ra-n-r-b-r" class="headerlink" title="$(a+b)^n=\sum_{r=0}^nC_n^ra^{n-r}b^r$"></a>$(a+b)^n=\sum_{r=0}^nC_n^ra^{n-r}b^r$</h3><h2 id="杨辉三角形"><a href="#杨辉三角形" class="headerlink" title="杨辉三角形"></a>杨辉三角形</h2><p><img src="http://oyji25904.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-10-29%20%E4%B8%8A%E5%8D%8812.00.27.png?imageMogr2/thumbnail/!50p" alt=""></p>
-<p>第一行i=1;第二行i=2;以此类推…</p>
+        <p>luogu_ P3366 【模板】最小生成树</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>如题，给出一个无向图，求出最小生成树，如果该图不连通，则输出orz</p>
+<h2 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h2><p>输入格式：</p>
+<p>第一行包含两个整数N、M，表示该图共有N个结点和M条无向边。（N&lt;=5000，M&lt;=200000）</p>
+<p>接下来M行每行包含三个整数Xi、Yi、Zi，表示有一条长度为Zi的无向边连接结点Xi、Yi</p>
+<p>输出格式：</p>
+<p>输出包含一个数，即最小生成树的各边的长度之和；如果该图不连通则输出orz</p>
 <a id="more"></a>
-<h3 id="排列组合与杨辉三角形的关系"><a href="#排列组合与杨辉三角形的关系" class="headerlink" title="排列组合与杨辉三角形的关系"></a>排列组合与杨辉三角形的关系</h3><p>C(n,m)对应杨辉三角形的第n+1行的第m+1个数。</p>
-<p>例如C(2,1)对应杨辉三角形的第3行第2个数，即C(2,1) = 2。</p>
-<h3 id="杨辉三角形与二项式定理"><a href="#杨辉三角形与二项式定理" class="headerlink" title="杨辉三角形与二项式定理"></a>杨辉三角形与二项式定理</h3><p>(a+b)^1^=1a+1b</p>
-<p>(a+b)^2^=1a^2^+2ab+1b^2^</p>
-<p>(a+b)^3^=1a^3^+3a^2^b+3ab^2^+1b^3^</p>
-<p>不难看出二项式的系数与杨辉三角形的关系。</p>
-<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p><strong>NOIP 2006 2^k进制数</strong> 组合数的问题</p>
-<p><strong>NOIP 2011 计算系数</strong> 二项式定理</p>
-<p><strong>NOIP 2016 组合数问题</strong></p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p>输入样例#1：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">4 5</div><div class="line">1 2 2</div><div class="line">1 3 2</div><div class="line">1 4 3</div><div class="line">2 3 4</div><div class="line">3 4 3</div></pre></td></tr></table></figure>
+<p>输出样例#1：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">7</div></pre></td></tr></table></figure>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>时空限制：1000ms,128M</p>
+<p>数据规模：</p>
+<p>对于20%的数据：N&lt;=5，M&lt;=20</p>
+<p>对于40%的数据：N&lt;=50，M&lt;=2500</p>
+<p>对于70%的数据：N&lt;=500，M&lt;=10000</p>
+<p>对于100%的数据：N&lt;=5000，M&lt;=200000</p>
+<p><img src="https://cdn.luogu.org/upload/pic/2259.png" alt=""></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,m,x,y,z,tot,ans,flag,fa[<span class="number">5007</span>];</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">E</span>&#123;</span></div><div class="line">    <span class="keyword">int</span> u,v,w;</div><div class="line">&#125;edg[<span class="number">200007</span>];</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">cmp</span><span class="params">(<span class="keyword">const</span> E x,<span class="keyword">const</span> E y)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> x.w&lt;y.w;</div><div class="line"> &#125;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">findroot</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> fa[x]==x ? x : fa[x]=findroot(fa[x]);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) </div><div class="line">        fa[i]=i;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;edg[i].u,&amp;edg[i].v,&amp;edg[i].w);</div><div class="line">    sort(edg+<span class="number">1</span>,edg+m+<span class="number">1</span>,cmp);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</div><div class="line">        <span class="keyword">int</span> x=findroot(edg[i].u),y=findroot(edg[i].v);</div><div class="line">        <span class="keyword">if</span>(x!=y) &#123;</div><div class="line">            fa[x]=y;  ans+=edg[i].w;  tot++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(tot==n<span class="number">-1</span>) <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">    tot==n<span class="number">-1</span> ? <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,ans) : <span class="built_in">printf</span>(<span class="string">"orz\n"</span>);   </div><div class="line">  	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -366,7 +374,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/数论/" rel="tag"># 数论</a>
+            <a href="/tags/最小生成树/" rel="tag"># 最小生成树</a>
           
         </div>
       
@@ -379,8 +387,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/set集合.html" rel="next" title="set集合">
-                <i class="fa fa-chevron-left"></i> set集合
+              <a href="/vector.html" rel="next" title="vector">
+                <i class="fa fa-chevron-left"></i> vector
               </a>
             
           </div>
@@ -388,10 +396,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/map.html" rel="prev" title="map">
-                map <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -530,7 +534,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#排列组合的公式"><span class="nav-number">1.</span> <span class="nav-text">排列组合的公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-n-m-frac-n-m-n-m"><span class="nav-number">1.1.</span> <span class="nav-text">$ C_n^m = \frac{n!}{m!(n-m)!} $</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二项式定理"><span class="nav-number">2.</span> <span class="nav-text">二项式定理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-b-n-sum-r-0-nC-n-ra-n-r-b-r"><span class="nav-number">2.1.</span> <span class="nav-text">$(a+b)^n=\sum_{r=0}^nC_n^ra^{n-r}b^r$</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杨辉三角形"><span class="nav-number">3.</span> <span class="nav-text">杨辉三角形</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#排列组合与杨辉三角形的关系"><span class="nav-number">3.1.</span> <span class="nav-text">排列组合与杨辉三角形的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杨辉三角形与二项式定理"><span class="nav-number">3.2.</span> <span class="nav-text">杨辉三角形与二项式定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题"><span class="nav-number">4.</span> <span class="nav-text">例题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入输出格式"><span class="nav-number">2.</span> <span class="nav-text">输入输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入输出样例"><span class="nav-number">3.</span> <span class="nav-text">输入输出样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">4.</span> <span class="nav-text">说明</span></a></li></ol></div>
             
 
           </div>
