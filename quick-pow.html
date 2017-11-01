@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
 <meta property="og:description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-01T13:48:07.000Z">
+<meta property="og:updated_time" content="2017-11-01T14:00:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速幂">
 <meta name="twitter:description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
@@ -360,7 +360,7 @@
 <h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">quick_pow</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</div><div class="line">	<span class="keyword">int</span> ans=<span class="number">1</span>;</div><div class="line">	<span class="keyword">while</span>(y)&#123;</div><div class="line">		<span class="keyword">if</span>(y &amp; <span class="number">1</span>) ans*=x;</div><div class="line">		x*=x;</div><div class="line">		y&gt;&gt;=<span class="number">1</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> ans;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>我们不断的让x*=x目的即是累乘，以便随时对ans做出贡献。</p>
 <p>由于指数函数是爆炸增长的函数，所以很有可能会爆掉int的范围，根据题意决定是用 <code>long long</code>还是<code>unsigned int</code>还是<code>mod某个数</code>自己看着办。</p>
-
+<a id="more"></a>
       
     </div>
     
