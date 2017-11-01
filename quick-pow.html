@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
 <meta property="og:description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-01T13:29:42.000Z">
+<meta property="og:updated_time" content="2017-11-01T13:39:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速幂">
 <meta name="twitter:description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
@@ -353,7 +353,7 @@
       
         <p>快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到<code>O(logn)</code>，快了很多，它的原理如下：</p>
 <p>假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$</p>
-<p>11的二进制是1011，11=2^3^x1 + 2^2^x0 + 2^1^x1 +2^0^x1，因此，我们将a^11^转化为算$a^{2^0}<em>a^{2^1}</em>a^{2^3}$，原来算11次，现在算3次，速度快了很多。</p>
+<p>11的二进制是1011，11=2^3^x1 + 2^2^x0 + 2^1^x1 +2^0^x1，因此，我们将$a^{11}$转化为算$a^{2^0}a^{2^1}a^{2^3}$，原来算11次，现在算3次，速度快了很多。</p>
 <h2 id="二进制实现"><a href="#二进制实现" class="headerlink" title="二进制实现"></a>二进制实现</h2><p>两个强大的工具<code>&amp;</code>和<code>&gt;&gt;</code></p>
 <p><code>&amp;</code>运算通常用于二进制取位操作，例如一个数&amp;1的结果就是取二进制的最末位。还可以判断奇偶x &amp; 1 == 0为偶，x &amp; 1 == 1为奇。</p>
 <p><code>&gt;&gt;</code>是二进制去掉最后一位。</p>
