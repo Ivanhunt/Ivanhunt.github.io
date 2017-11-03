@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="并查集" />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="题目描述1920年的芝加哥，出现了一群强盗。如果两个强盗遇上了，那么他们要么是朋友，要么是敌人。而且有一点是肯定的，就是： 我朋友的朋友是我的朋友； 我敌人的敌人也是我的朋友。 两个强盗是同一团伙的条件是当且仅当他们是朋友。现在给你一些关于强盗们的信息，问你最多有多少个强盗团伙。 输入输出格式输入格式： 输入文件gangs.in的第一行是一个整数N(2&amp;lt;=N&amp;lt;=1000)，表示强盗">
-<meta name="keywords" content="并查集">
+<meta name="description" content="思路–对于任意一个合数，我们可以拆成最小质数*某个数字的形式。我们枚举『某个数字』i（区分与埃氏筛法的枚举质因数），然后再从第一个质数开始枚举，进行筛选。 –为了保证每个合数只被最小质因数筛选，当我们枚举的质数可以整除『某个数字』时，如果再往大里枚举，枚举的质数就不可能是最小质数了。 代码123456789101112131415161718#include &amp;lt;iostream&amp;gt;#in">
+<meta name="keywords" content="Hunt 张承琪 Ivanhunt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="团伙">
-<meta property="og:url" content="Ivanhunt.cn/团伙.html">
+<meta property="og:title" content="欧拉筛">
+<meta property="og:url" content="Ivanhunt.cn/欧拉筛.html">
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
-<meta property="og:description" content="题目描述1920年的芝加哥，出现了一群强盗。如果两个强盗遇上了，那么他们要么是朋友，要么是敌人。而且有一点是肯定的，就是： 我朋友的朋友是我的朋友； 我敌人的敌人也是我的朋友。 两个强盗是同一团伙的条件是当且仅当他们是朋友。现在给你一些关于强盗们的信息，问你最多有多少个强盗团伙。 输入输出格式输入格式： 输入文件gangs.in的第一行是一个整数N(2&amp;lt;=N&amp;lt;=1000)，表示强盗">
+<meta property="og:description" content="思路–对于任意一个合数，我们可以拆成最小质数*某个数字的形式。我们枚举『某个数字』i（区分与埃氏筛法的枚举质因数），然后再从第一个质数开始枚举，进行筛选。 –为了保证每个合数只被最小质因数筛选，当我们枚举的质数可以整除『某个数字』时，如果再往大里枚举，枚举的质数就不可能是最小质数了。 代码123456789101112131415161718#include &amp;lt;iostream&amp;gt;#in">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-01T13:47:42.000Z">
+<meta property="og:updated_time" content="2017-11-02T01:19:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="团伙">
-<meta name="twitter:description" content="题目描述1920年的芝加哥，出现了一群强盗。如果两个强盗遇上了，那么他们要么是朋友，要么是敌人。而且有一点是肯定的，就是： 我朋友的朋友是我的朋友； 我敌人的敌人也是我的朋友。 两个强盗是同一团伙的条件是当且仅当他们是朋友。现在给你一些关于强盗们的信息，问你最多有多少个强盗团伙。 输入输出格式输入格式： 输入文件gangs.in的第一行是一个整数N(2&amp;lt;=N&amp;lt;=1000)，表示强盗">
+<meta name="twitter:title" content="欧拉筛">
+<meta name="twitter:description" content="思路–对于任意一个合数，我们可以拆成最小质数*某个数字的形式。我们枚举『某个数字』i（区分与埃氏筛法的枚举质因数），然后再从第一个质数开始枚举，进行筛选。 –为了保证每个合数只被最小质因数筛选，当我们枚举的质数可以整除『某个数字』时，如果再往大里枚举，枚举的质数就不可能是最小质数了。 代码123456789101112131415161718#include &amp;lt;iostream&amp;gt;#in">
 
 
 
@@ -149,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="Ivanhunt.cn/团伙.html"/>
+  <link rel="canonical" href="Ivanhunt.cn/欧拉筛.html"/>
 
 
 
 
 
-  <title>团伙 | IvanHunt's Blog</title>
+  <title>欧拉筛 | IvanHunt's Blog</title>
   
 
 
@@ -284,7 +284,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="Ivanhunt.cn/团伙.html">
+    <link itemprop="mainEntityOfPage" href="Ivanhunt.cn/欧拉筛.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张承琪">
@@ -301,7 +301,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">团伙</h1>
+          <h1 class="post-title" itemprop="name headline">欧拉筛</h1>
         
 
         <div class="post-meta">
@@ -313,8 +313,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-31T20:50:12+08:00">
-                2017-10-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-02T09:13:51+08:00">
+                2017-11-02
               </time>
             
 
@@ -351,26 +351,9 @@
       
 
       
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=509106616&auto=1&height=66"></iframe>
-
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>1920年的芝加哥，出现了一群强盗。如果两个强盗遇上了，那么他们要么是朋友，要么是敌人。而且有一点是肯定的，就是：</p>
-<p>我朋友的朋友是我的朋友；</p>
-<p>我敌人的敌人也是我的朋友。</p>
-<p>两个强盗是同一团伙的条件是当且仅当他们是朋友。现在给你一些关于强盗们的信息，问你最多有多少个强盗团伙。</p>
-<h2 id="输入输出格式"><a href="#输入输出格式" class="headerlink" title="输入输出格式"></a>输入输出格式</h2><p>输入格式：</p>
-<p>输入文件gangs.in的第一行是一个整数N(2&lt;=N&lt;=1000)，表示强盗的个数（从1编号到N）。 第二行M(1&lt;=M&lt;=5000)，表示关于强盗的信息条数。 以下M行，每行可能是F p q或是E p q（1&lt;=p q&lt;=N），F表示p和q是朋友，E表示p和q是敌人。输入数据保证不会产生信息的矛盾。</p>
-<p>输出格式：</p>
-<p>输出文件gangs.out只有一行，表示最大可能的团伙数。</p>
-<a id="more"></a>
-<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p>输入样例#1：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">6</div><div class="line">4</div><div class="line">E 1 4</div><div class="line">F 3 5</div><div class="line">F 4 6</div><div class="line">E 1 2</div></pre></td></tr></table></figure>
-<p>输出样例#1：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">3</div></pre></td></tr></table></figure>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>对于这道题，其实我一开始以为是道简单并查集模板题，对于“我朋友的朋友是我的朋友”这个要求很好理解，直接并查集模板就可以过，</p>
-<p>但是对于“我敌人的敌人也是我的朋友”这个要求就需要动点脑筋了。我一开始想用两个并查集，一个代表朋友，一个代表敌人，然后通过遍历敌人的并查集来确定关系，但是很显然是做不到的。</p>
-<p>于是我再次研究了一下题目，于是发现了一件重要的事，一个敌人的所有敌人都在同一个朋友并查集里。所以我们只要用一个数组来记录a的一个敌人（是的，没错就是一个），当再次遇到a的一个敌人时直接将他们两个放入同一个并查集，于是题目就完美的解决了。</p>
-<p>ps：而且通过比较，这种比那种用二维存储敌人关系的方法要快的多，我十个点全部0ms，如果题目数据更大的话，显然是这种方法更占优势</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,m,fa[<span class="number">1007</span>],enm[<span class="number">1007</span>];</div><div class="line"><span class="keyword">int</span> count[<span class="number">1007</span>]=&#123;<span class="number">0</span>&#125;;</div><div class="line"><span class="keyword">int</span> p,q;</div><div class="line"><span class="keyword">char</span> c;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</div><div class="line">	<span class="keyword">return</span> fa[x] == x ? x : fa[x] = find(fa[x]);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">unionSet</span><span class="params">(<span class="keyword">int</span> u,<span class="keyword">int</span> v)</span></span>&#123;</div><div class="line">	u = find(u), v = find(v);</div><div class="line">	<span class="keyword">if</span>(u != v) fa[u] = v;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) fa[i]=i;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</div><div class="line">        <span class="built_in">cin</span>&gt;&gt;c&gt;&gt;p&gt;&gt;q;</div><div class="line">        <span class="keyword">if</span>(c==<span class="string">'F'</span>) unionSet(p,q);</div><div class="line">		<span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">if</span>(enm[p]==<span class="number">0</span>) enm[p]=find(q);</div><div class="line">            <span class="keyword">else</span> unionSet(q,enm[p]);</div><div class="line">            <span class="keyword">if</span>(enm[q]==<span class="number">0</span>) enm[q]=find(p);</div><div class="line">            <span class="keyword">else</span> unionSet(p,enm[q]);</div><div class="line">        &#125; </div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</div><div class="line">        count[find(i)]++;</div><div class="line">    <span class="keyword">int</span> cnt=<span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</div><div class="line">        <span class="keyword">if</span>(count[i]) cnt++;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;cnt;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+        <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>–对于任意一个合数，我们可以拆成最小质数*某个数字的形式。我们枚举『某个数字』i（区分与埃氏筛法的枚举质因数），然后再从第一个质数开始枚举，进行筛选。</p>
+<p>–为了保证每个合数只被最小质因数筛选，当我们枚举的质数可以整除『某个数字』时，如果再往大里枚举，枚举的质数就不可能是最小质数了。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,isprime[<span class="number">30</span>],prime[<span class="number">30</span>],cnt=<span class="number">0</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) isprime[i] = <span class="number">1</span>;</div><div class="line">	prime[<span class="number">0</span>] = prime[<span class="number">1</span>] = <span class="number">0</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</div><div class="line">		<span class="keyword">if</span>(isprime[i]) prime[++cnt] = i;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=cnt &amp;&amp; i*prime[j]&lt;=n;j++)&#123;</div><div class="line">			isprime[i*prime[j]] = <span class="number">0</span>;</div><div class="line">			<span class="keyword">if</span>(i%prime[j] == <span class="number">0</span>) <span class="keyword">break</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++)	<span class="built_in">printf</span>(<span class="string">"%d "</span>, prime[i]);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -388,10 +371,10 @@
   <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>本文标题:</span><a href="/团伙.html">团伙</a></p>
+  <p><span>本文标题:</span><a href="/欧拉筛.html">欧拉筛</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 张承琪 的个人博客">张承琪</a></p>
-  <p><span>原始链接:</span><a href="/团伙.html" title="团伙">Ivanhunt.cn/团伙.html</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="Ivanhunt.cn/团伙.html"  aria-label="复制成功！"></i></span>
+  <p><span>原始链接:</span><a href="/欧拉筛.html" title="欧拉筛">Ivanhunt.cn/欧拉筛.html</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="Ivanhunt.cn/欧拉筛.html"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -421,12 +404,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/并查集/" rel="tag"><i class="fa fa-tag"></i> 并查集</a>
-          
-        </div>
-      
 
       
       
@@ -436,8 +413,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/最小生成树.html" rel="next" title="Kruskal 最小生成树">
-                <i class="fa fa-chevron-left"></i> Kruskal 最小生成树
+              <a href="/quick-pow.html" rel="next" title="快速幂">
+                <i class="fa fa-chevron-left"></i> 快速幂
               </a>
             
           </div>
@@ -445,10 +422,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/quick-pow.html" rel="prev" title="快速幂">
-                快速幂 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,7 +560,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入输出格式"><span class="nav-number">2.</span> <span class="nav-text">输入输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入输出样例"><span class="nav-number">3.</span> <span class="nav-text">输入输出样例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">4.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">5.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
