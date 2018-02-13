@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="数论," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -108,18 +108,17 @@
 
 
 
-<meta name="description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
-<meta name="keywords" content="数论">
-<meta property="og:type" content="article">
-<meta property="og:title" content="快速幂">
-<meta property="og:url" content="Ivanhunt.cn/quick-pow.html">
+<meta name="description" content="Fight For The Future">
+<meta name="keywords" content="Hunt 张承琪 Ivanhunt">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IvanHunt&#39;s Blog">
+<meta property="og:url" content="Ivanhunt.cn/tags/随笔/index.html">
 <meta property="og:site_name" content="IvanHunt&#39;s Blog">
-<meta property="og:description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
+<meta property="og:description" content="Fight For The Future">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-01T14:00:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="快速幂">
-<meta name="twitter:description" content="快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到O(logn)，快了很多，它的原理如下： 假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$ 11的二进制是1011，11=2^3^x1 + 2^2^">
+<meta name="twitter:title" content="IvanHunt&#39;s Blog">
+<meta name="twitter:description" content="Fight For The Future">
 
 
 
@@ -149,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="Ivanhunt.cn/quick-pow.html"/>
+  <link rel="canonical" href="Ivanhunt.cn/tags/随笔/"/>
 
 
 
 
 
-  <title>快速幂 | IvanHunt's Blog</title>
+  <title>标签: 随笔 | IvanHunt's Blog</title>
   
 
 
@@ -184,7 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left  ">
     <div class="headband"></div>
 
     <a href="https://github.com/Ivanhunt"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
@@ -270,194 +269,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>随笔<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="Ivanhunt.cn/quick-pow.html">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张承琪">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IvanHunt's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">快速幂</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/随笔.html" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">随笔</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-01T21:08:23+08:00">
-                2017-11-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>快速幂的目的就是做到快速求幂，假设我们要求a^b^，按照朴素算法就是把a连乘b次，这样一来时间复杂度是O(b)也即是O(n)级别，快速幂能做到<code>O(logn)</code>，快了很多，它的原理如下：</p>
-<p>假设我们要求a^b^，那么其实b是可以拆成二进制的，该二进制数第i为的权为$2^{i-1}$，例如当b=11时，a^11^=$a^{2^0+2^1+2^3}$</p>
-<p>11的二进制是1011，11=2^3^x1 + 2^2^x0 + 2^1^x1 +2^0^x1，因此，我们将$a^{11}$转化为算$a^{2^0}a^{2^1}a^{2^3}$，原来算11次，现在算3次，速度快了很多。</p>
-<h2 id="二进制实现"><a href="#二进制实现" class="headerlink" title="二进制实现"></a>二进制实现</h2><p>两个强大的工具<code>&amp;</code>和<code>&gt;&gt;</code></p>
-<p><code>&amp;</code>运算通常用于二进制取位操作，例如一个数&amp;1的结果就是取二进制的最末位。还可以判断奇偶x &amp; 1 == 0为偶，x &amp; 1 == 1为奇。</p>
-<p><code>&gt;&gt;</code>是二进制去掉最后一位。</p>
-<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">quick_pow</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;</div><div class="line">	<span class="keyword">int</span> ans=<span class="number">1</span>;</div><div class="line">	<span class="keyword">while</span>(y)&#123;</div><div class="line">		<span class="keyword">if</span>(y &amp; <span class="number">1</span>) ans*=x;</div><div class="line">		x*=x;</div><div class="line">		y&gt;&gt;=<span class="number">1</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> ans;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>我们不断的让x*=x目的即是累乘，以便随时对ans做出贡献。</p>
-<p>由于指数函数是爆炸增长的函数，所以很有可能会爆掉int的范围，根据题意决定是用 <code>long long</code>还是<code>unsigned int</code>还是<code>mod某个数</code>自己看着办。</p>
-<a id="more"></a>
-      
-    </div>
-    
-    
-    
-
-    <div>
-      
+            </a>
         
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+      </h2>
 
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
-  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>本文标题:</span><a href="/quick-pow.html">快速幂</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 张承琪 的个人博客">张承琪</a></p>
-  <p><span>原始链接:</span><a href="/quick-pow.html" title="快速幂">Ivanhunt.cn/quick-pow.html</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="Ivanhunt.cn/quick-pow.html"  aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-    clipboard.on('success', $(function(){
-      $(".fa-clipboard").click(function(){
-        swal({   
-          title: "",   
-          text: '复制成功',   
-          html: false,
-          timer: 500,   
-          showConfirmButton: false
-        });
-      });
-    }));  
-</script>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-02-13T22:22:35+08:00"
+              content="2018-02-13" >
+          02-13
+        </time>
+      </div>
 
-      
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/数论/" rel="tag"><i class="fa fa-tag"></i> 数论</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/团伙.html" rel="next" title="团伙">
-                <i class="fa fa-chevron-left"></i> 团伙
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/欧拉筛.html" rel="prev" title="欧拉筛">
-                欧拉筛 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -465,10 +324,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -489,17 +344,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -566,22 +412,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#二进制实现"><span class="nav-number">1.</span> <span class="nav-text">二进制实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核心代码"><span class="nav-number">2.</span> <span class="nav-text">核心代码</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -711,10 +541,10 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
+    <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
 <script type="text/javascript" src="/js/src/post-details.js?v="></script>
 
-
+  
 
   
 
